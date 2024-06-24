@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID信息 - 车管系统</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        .info-list li {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .info-list li:last-child {
+            border-bottom: 1px solid #ddd; /* Add border-bottom to the last item */
+        }
+        .info-list .label {
+            color: #666;
+            width: 100px; /* Fixed width for labels */
+            min-width: 100px; /* Minimum width for labels */
+        }
+        .info-list .value {
+            color: #333;
+            text-align: left; /* Left-align the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RFID信息 - 车管系统</h1>
+        </div>
+        <ul class="info-list">
+            <li>
+                <span class="label">车牌号</span>
+                <span class="value">赣A·RP1177</span>
+            </li>
+            <li>
+                <span class="label">车主姓名</span>
+                <span class="value">康*</span>
+            </li>
+            <li>
+                <span class="label">入网时间</span>
+                <span class="value">2023-10-31 14:05:50</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
